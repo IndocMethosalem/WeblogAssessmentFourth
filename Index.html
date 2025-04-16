@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minimalist Living Blog</title>
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #222222;
+      --accent-color: #2c3e50;
+    }
+
+    body.dark {
+      --bg-color: #1c1c1c;
+      --text-color: #f0f0f0;
+      --accent-color: #f39c12;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: all 0.3s ease;
+    }
+
+    header {
+      background: var(--accent-color);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .toggle-mode {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background-color: white;
+      color: var(--accent-color);
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    article {
+      margin-bottom: 3rem;
+    }
+
+    article h2 {
+      color: var(--accent-color);
+    }
+
+    .like-section {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .like-button {
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    footer {
+      background: var(--accent-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .toggle-mode {
+        top: 10px;
+        right: 10px;
+        padding: 6px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="toggle-mode" onclick="toggleMode()">Saturate</button>
+
+  <header>
+    <h1>My Coding Experience </h1>
+  </header>
+
+  <div class="container">
+    <article>
+      <h2>What is coding?</h2>
+      <p>Coding is the process of writing instructions in a language that computers can understand and follow. These instructions tell the computer what tasks to perform, whether it's displaying a webpage, running an app, or controlling a robot. Different coding languages, like Python, JavaScript, or HTML, are used depending on what you want the computer to do.
+
+Just like humans use different languages to communicate, coders use programming languages to "talk" to computers. Each line of code acts like a step in a recipe, guiding the computer through specific actions. This makes coding a powerful tool for building software, websites, games, and even controlling devices like smart home gadgets.
+
+Learning to code helps you understand how technology works and gives you the ability to create your own digital tools. It encourages problem-solving, creativity, and logical thinking. Whether you're building a simple calculator or a complex game, coding is how ideas become reality on a screen.</p>
+    </article>
+
+    <article>
+      <h2>Why did I like coding?</h2>
+      <p>Coding is what can be defined as the root of a game that makes it come to life. Without it, a game is just an idea — like a blank canvas waiting to be painted on. Coding provides the foundation that brings characters, movements, challenges, and entire worlds into existence. It's the silent engine that powers every decision, interaction, and animation you see on the screen.
+
+In many ways, coding is like the body of a game — stretching from the head to the foot — giving structure, movement, and purpose to every part. Just like a body needs bones, muscles, and nerves to function, a game needs code to define how it looks, feels, and reacts. Whether it's a character jumping, a button being clicked, or a monster attacking, every action in a game is controlled through lines of code working behind the scenes.
+
+Coding is also the beginning structure of a game's story or life — it's where everything begins. It’s the blueprint that turns imagination into reality, just like writing the first page of a novel. The creative vision of the game designer comes to life only through the logic and instructions written by a coder. Without coding, a game would have no heartbeat, no motion, and no interaction — just still ideas with no way to grow. </p>
+    </article>
+
+    <article>
+      <h2>Will I use this in the near future?</h2>
+      <p>Most likely, yes — I see myself pursuing software engineering in the future because it opens up so many possibilities. It’s a field where creativity meets logic, and it allows people to build powerful tools that impact everyday life. With software engineering, I can learn how to create programs, websites, apps, and games from the ground up, which is something I’ve always found fascinating. It’s not just about writing code, but about solving real-world problems and designing experiences that others can enjoy or benefit from.
+
+At the same time, I think it would be amazing to start my own game, website, or application one day. I have ideas that I believe could be fun, useful, or even meaningful to others — things that could entertain, educate, or make life just a little easier. Being able to bring those ideas to life through my own skills in coding and design would be incredibly rewarding. I don’t want to just consume technology; I want to be part of creating it, shaping it, and using it to express something unique.
+
+Sooner or later, I hope to create something that could truly better the world — even in a small way. Whether it’s a game that inspires creativity, a website that spreads awareness, or an app that helps people in their daily routines, I want to build something that has purpose. Technology is constantly evolving, and I’d love to be a part of that evolution by contributing something original and helpful. That’s what draws me toward software engineering and motivates me to keep learning and dreaming big. </p>
+    </article>
+  </div>
+</body>
+</html>
